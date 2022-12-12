@@ -2,7 +2,7 @@
 """
 **** The Discriminant
 The square root part is called the "discriminant".  
-1. Depending on the coefficients, it is possible for it to have a negative value. Since you can't square root a negative, when the discrminant is 0, there are no solutions to the equation.
+1. Depending on the coefficients, it is possible for it to have a negative value. Since you can't square root a negative, when the discrminant is less than 0, there are no solutions to the equation.
 2. If the discriminant is 0, there is only 1 solution, because the quadratic is a perfect square
 3. If the discriminant is positive, there will be 2 solutions
 4. If the discriminant is a perfect square, then the roots will be rational numbers (fractions) and it is possible to solve the quadratic by factoring rather than having to rely on the quadratic formula

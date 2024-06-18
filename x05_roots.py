@@ -26,17 +26,21 @@ You may import the functions from your other assignments.
 '''
 
 def roots(a,b,c):
-  '''
-  input parameters:
-  a, b, c : signed float
-  coefficients for the quadratic in the format:
-  ax^2 + bc + c = 0
+
+  discriminant = (b**2)-(4*a*c)
   
-  return:
-  list with the 2 values of the roots if there are solutions
-  None if there are no solutions
-  '''
-  return None
+  if discriminant < 0:
+    return None
+  elif discriminant == 0:
+    d = (discriminant**0.5)
+    a1 = ((-b)+d)/2*a
+    return [a1,a1]
+  elif discriminant > 0:
+    d = (discriminant**0.5)
+    a1 = ((-b)+d)/2*a
+    a2 = ((-b)-d)/2*a
+    return [a1,a2]
+
 
 def main():
   assert (3 in roots(1,-1,-6)) == True
